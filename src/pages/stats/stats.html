@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title (click)="editName()">
+      {{Displayname}}<ion-icon name="md-create"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding>
+  <div class="profilePic" (click)="changePicture()">
+    <span *ngIf="!profilePic">Loading..</span>  
+    <ion-icon name="md-create" *ngIf="profilePic"></ion-icon>
+    <img [src]="profilePic" *ngIf="profilePic" />
+    <!-- <img [src]="profilePic" *ngIf="profilePic" /></ion-icon> -->
+  </div>
+  <div class="stats">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{wins}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Wins</span>
+          </ion-row>
+        </ion-col>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{looses}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Looses</span>
+          </ion-row>
+        </ion-col>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{draws}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Draws</span>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- <div class="pieChart">
+    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"></canvas>
+  </div> -->
+
+  <!-- <br><br><br>
+  <div style="display:flex; flex-direction:column;justify-content:center">
+    --<button ion-button (click)="takePicture()">Lets take a picture!</button>--
+    ----
+  </div> -->
+</ion-content>

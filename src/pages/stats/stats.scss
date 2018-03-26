@@ -1,0 +1,50 @@
+page-stats {
+    .profilePic{
+        width: 100vw;
+        height: 56.25vw;
+        background: black;
+    }
+    .profilePic img{
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    .profilePic ion-icon{
+        text-align: right;
+        font-size: 5vw;
+        width: 100%;
+        height: 100%;
+        color: white;
+        z-index: 100;
+        position: absolute;
+    }
+    .profilePic span{
+        width: 100%;
+        height: 100%;
+        font-size: 5vw;
+        text-align: center;
+        color: white;
+    }
+    .stats ion-grid{
+        padding: 5px;
+    }
+    .stats span{
+        width: 100%;
+        text-align: center;
+    }
+    .pieChart{        
+        display: block;
+        padding: 5px;
+        width: 100%;
+    }
+    .pieChart canvas{
+        padding: 5px;
+        width: 75vw !important;
+        height: 75vw !important;
+        margin: auto;
+        display: block;
+    }
+    ion-title ion-icon{
+        margin: 10px;
+    }
+}

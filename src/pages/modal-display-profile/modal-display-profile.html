@@ -1,0 +1,50 @@
+<ion-header (click)="goBackToPrevPage()">
+  <ion-navbar>
+    <ion-title>-{{Displayname}}-</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding (click)="goBackToPrevPage()">
+  <div class="profilePic">
+    <span *ngIf="!profilePic">Loading..</span>  
+    <img [src]="profilePic" *ngIf="profilePic" />
+  </div>
+  <div class="stats">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{wins}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Wins</span>
+          </ion-row>
+        </ion-col>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{looses}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Looses</span>
+          </ion-row>
+        </ion-col>
+        <ion-col col-4>
+          <ion-row col-12>
+            <span>
+              <strong>{{draws}}</strong>
+            </span>
+          </ion-row>
+          <ion-row col-12>
+            <span>Draws</span>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>  
+</ion-content>
+<ion-footer (click)="goBackToPrevPage()">
+<button ion-button full color="dark" class="test" >Return</button>
+</ion-footer>
