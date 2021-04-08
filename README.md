@@ -23,13 +23,3 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
-
-```bash
-echo "# 9tictactoe" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/masterholdy/9tictactoe.git
-git push -u origin master
-```
-
